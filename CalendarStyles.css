@@ -41,6 +41,23 @@ html, body, .container{
 #year{
     margin-left: 10px;
 }
+#prev, #next{
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #84c8f0;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+#prev{
+    margin-right: 20%;
+}
+#next{
+    margin-left: 20%;
+}
 .dayName, .dayNum{
     display: grid;
     grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
@@ -67,6 +84,9 @@ html, body, .container{
 }
 #one{
     grid-column: 1;
+}
+#prev:hover, #next:hover{
+    background-color: #e7e7e7;
 }
 .dayNum button:hover{
     background-color: white;
