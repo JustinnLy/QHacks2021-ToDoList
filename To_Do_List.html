@@ -27,13 +27,13 @@
 
             <div class ='Todo' id = "tobedone">
                 <h1>Tasks Left To Complete</h1>
-               <div class ='textbox'>
-                <input type="checkbox">
+               <div class ='textbox'> 
+                <input type="checkbox" id ='check'>
                 <p>Task to do</p>
                </div>
             </div>
 
-            <div class = 'Completed'>
+            <div class = 'Completed' id = "complete">
                 <h1>Completed Tasks</h1>
                 <div class ='textbox'>
                     <p>Task Completed</p>
@@ -42,7 +42,7 @@
 
         </div>  
         
-        <button id ="update" onclick="alert('Task Updated')">Update Task</button>
+        <button id ="update" onclick="moveTask()">Update Task</button>
         
         <script type="text/javascript" src="To_Do_List.js"></script>
     </body>
