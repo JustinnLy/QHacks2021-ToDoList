@@ -66,7 +66,7 @@ html, body, .container{
     cursor: pointer;
 }
 #one{
-    grid-column: 6;
+    grid-column: 1;
 }
 .dayNum button:hover{
     background-color: white;
