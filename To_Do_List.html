@@ -17,9 +17,9 @@
         </div>
 
         <div class = 'input'>
-                <p>Task:</p>
-                <input type="text" id="task1">
-                <button  id ="task" onclick="updateTask()">Submit Task</button>
+            <p id="inputTaskP">Task:</p>
+            <input type="text" id="task1">
+            <button  id ="task" onclick="updateTask()">Submit Task</button>
             
         </div>
 
@@ -27,8 +27,8 @@
 
             <div class ='Todo' id = "tobedone">
                 <h1>Tasks Left To Complete</h1>
-               <div class ='textbox'> 
-                <input type="checkbox" id ='check'>
+                <div class ='textbox'> 
+                    <input type="checkbox" id ='check'>
                 <p>Task to do</p>
                </div>
             </div>
@@ -39,10 +39,8 @@
                     <p>Task Completed</p>
                </div>
             </div>
-
+            <button id ="update" onclick="moveTask()">Update Task</button>
         </div>  
-        
-        <button id ="update" onclick="moveTask()">Update Task</button>
         
         <script type="text/javascript" src="To_Do_List.js"></script>
     </body>

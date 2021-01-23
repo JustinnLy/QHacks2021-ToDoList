@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .navbar{
     background-color: #84c8f0;
@@ -20,48 +21,55 @@ body{
     color: black;
     padding: 10px;
 }
-
+#date{
+    text-align: center;
+    font-size: 48px;
+}
+.input{
+    text-align: center;
+    margin: 25px;
+}
+#inputTaskP{
+    font-size: 24px;
+}
+#task1{
+    height: 20px;
+    width: 30%;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    
+}
+#task{
+    padding: 10px;
+    border: none;
+    background-color: aqua;
+    transition-duration: 0.5s;
+}
 .List{
     display: grid;
     grid-template-columns: 48% 48%;
 
 }
-.Todo{
+.Todo, .Completed{
     display: inline-block;
     padding: 10px;
-
-}
-.Completed{
-    display: inline-block;
-    padding: 10px;
-
-}
-
-.textbox{
-    padding: 10px;
-    margin: 1px;
-    border-radius: 2px;
-    border-style: solid;
-    width: 90%;
-    border-color: black;
-
-}
-.input{
-    text-align: center;
-
 }
 h1{
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.textbox{
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    width: 80%;
 
+}
 p {
     display: inline;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
 
-}
-form{
-    display: inline;
 }
 #update{ 
     width: 100px;
@@ -76,16 +84,6 @@ form{
 #update:hover{
     background-color: #68ffff;
     color: #606060;
-}
-
-#task{
-    width: 100px;
-    padding: 2px;
-    margin: 3px;
-    border-radius: 2px;
-    background-color: aqua;
-    border-color: aqua;
-    transition-duration: 0.5s;
 }
 #task:hover{
     background-color: #68ffff;
