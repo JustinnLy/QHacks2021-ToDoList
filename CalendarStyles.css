@@ -13,7 +13,6 @@ html, body, .container{
     margin: 0;
     padding: 15px;
     height: 100%;
-    vertical-align: ;
 }
 .navbar ul li{
     display: inline;
