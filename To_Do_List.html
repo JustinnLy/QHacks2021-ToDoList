@@ -3,6 +3,7 @@
     <head>
         <title>Tasks to Complete</title>
         <link rel="stylesheet" href = "To_Do_List.css">
+        <script type="text/javascript" src="To_Do_List.js"></script>
     </head>
     <body>
         
@@ -11,43 +12,27 @@
         </div>
 
         <div class = 'input'>
-            <form>
                 <p>Task:</p>
-                <input type="text">
-                <input  id ="task" type="button" onclick="" value="Submit Task">
-            </form>
+                <input type="text" id="task1">
+                <button  id ="task" onclick="updateTask()">Submit Task</button>
+            
         </div>
 
         <div class = 'List'>
 
-            <div class ='Todo'>
+            <div class ='Todo' id = "tobedone">
                 <h1>Tasks Left To Complete</h1>
-                
                <div class ='textbox'>
-                <form>
-                <input type="checkbox"/>
-                </form>
-
+                <input type="checkbox">
                 <p>Task to do</p>
                </div>
-
-               <div class ='textbox'>
-                <form>
-                    <input type="checkbox"/>
-                </form>
-                    <p>Task to do</p>
-                </div>
-
             </div>
 
             <div class = 'Completed'>
-
                 <h1>Completed Tasks</h1>
-
                 <div class ='textbox'>
                     <p>Task Completed</p>
                </div>
-
             </div>
 
         </div>  
