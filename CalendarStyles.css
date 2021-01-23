@@ -1,0 +1,70 @@
+html, body, .container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    background-color: #ffffff;
+}
+.navbar{
+    background-color: #84c8f0;
+}
+.navbar ul{
+    margin: 0;
+    padding: 15px;
+    height: 100%;
+    vertical-align: ;
+}
+.navbar ul li{
+    display: inline;
+    text-align: center;
+}
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 10px
+}
+.monthContainer{
+    display: flex;
+    height: 10%;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.month{
+    margin: 0;
+}
+.dayName, .dayNum{
+    display: grid;
+    grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.dayNum{
+    height: 70%;
+    border: 3px solid black;
+    background-color:  #84c8f0;
+}
+.dayName{
+    font-size: 24px;
+}
+.dayNum button{
+    border: none;
+    padding: 0;
+    background-color: #84c8f0;
+    font-size: 40px;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+.one{
+    grid-column: 6;
+}
+.dayNum button:hover{
+    background-color: white;
+}
+.dayNum button:focus{
+    outline: none;
+}
