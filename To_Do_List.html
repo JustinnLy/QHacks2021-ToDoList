@@ -3,12 +3,17 @@
     <head>
         <title>Tasks to Complete</title>
         <link rel="stylesheet" href = "To_Do_List.css">
-        <script type="text/javascript" src="To_Do_List.js"></script>
     </head>
     <body>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Calendar.html">Calendar</a></li>
+            </ul>
+        </div>
         
         <div class ='header'>
-            <h1>This is the header</h1>
+            <h1 id="date">This is the header</h1>
         </div>
 
         <div class = 'input'>
@@ -39,5 +44,6 @@
         
         <button id ="update" onclick="alert('Task Updated')">Update Task</button>
         
+        <script type="text/javascript" src="To_Do_List.js"></script>
     </body>
 </html>

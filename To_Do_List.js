@@ -1,3 +1,8 @@
+console.log(window.localStorage);
+
+//Updates to the date that was clicked from the calendar
+const headerDate = document.getElementById("date");
+headerDate.innerHTML = window.localStorage.month + " " + window.localStorage.day + " " + window.localStorage.year;
 
 function updateTask () {
     

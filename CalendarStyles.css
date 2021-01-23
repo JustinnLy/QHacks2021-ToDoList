@@ -23,17 +23,23 @@ html, body, .container{
     font-weight: bold;
     text-decoration: none;
     color: black;
-    padding: 10px
+    padding: 10px;
 }
-.monthContainer{
+.month-yearContainer{
     display: flex;
     height: 10%;
     font-size: 30px;
     justify-content: center;
     align-items: center;
 }
-.month{
+#month, #year{
     margin: 0;
+}
+#month{
+    margin-right:10px;
+}
+#year{
+    margin-left: 10px;
 }
 .dayName, .dayNum{
     display: grid;
@@ -58,7 +64,7 @@ html, body, .container{
     text-decoration: none;
     transition-duration: 1s;
 }
-.one{
+#one{
     grid-column: 6;
 }
 .dayNum button:hover{

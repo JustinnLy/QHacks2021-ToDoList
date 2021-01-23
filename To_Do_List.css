@@ -1,3 +1,26 @@
+body{
+    margin: 0;
+}
+.navbar{
+    background-color: #84c8f0;
+}
+.navbar ul{
+    margin: 0;
+    padding: 15px;
+    height: 100%;
+}
+.navbar ul li{
+    display: inline;
+    text-align: center;
+}
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
 .List{
     display: grid;
     grid-template-columns: 48% 48%;
@@ -56,7 +79,7 @@ form{
 }
 
 #task{
-    idth: 100px;
+    width: 100px;
     padding: 2px;
     margin: 3px;
     border-radius: 2px;
