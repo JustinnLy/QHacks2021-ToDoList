@@ -8,7 +8,7 @@ function updateTask () {
     const taskName = document.createElement("p");
     const checkBox = document.createElement("input");
     checkBox.type="checkbox";
-
+    checkBox.id="check";
     taskName.textContent = Task;
     newTask.classList.add("textbox");
 
@@ -20,6 +20,14 @@ function updateTask () {
 }
 
 function moveTask(){
-
-
+    var checkbox = document.querySelectorAll('input[type="checkbox"]');
+    const completed =document.getElementById("complete");
+    for(var i =0; i < checkbox.length;i++){
+        if(checkbox[i].checked){
+            var o = checkbox[i].parentElement;
+            o.removeChild(checkbox[i]);
+            completed.appendChild(o);
+            
+        }
+    }
 }
