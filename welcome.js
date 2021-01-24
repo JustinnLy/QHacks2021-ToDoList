@@ -8,9 +8,9 @@ const months = ["January","February","March","April","May","June","July","August
 const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
 //Updates HTML to get current date
-document.getElementById("day").innerHTML = days[day];
+document.getElementById("day").innerHTML = days[day] + ",";
 document.getElementById("month").innerHTML = months[month];
-document.getElementById("numDay").innerHTML = dayNum;
+document.getElementById("numDay").innerHTML = dayNum + ",";
 document.getElementById("year").innerHTML = year;
 
 let taskToday = `taskList${months[month]} ${dayNum} ${year}`;
@@ -20,7 +20,7 @@ if(typeof(window.localStorage[taskToday]) !== "undefined" && window.localStorage
     let taskArray = window.localStorage[taskToday].split(",");
 
     if(taskArray.length == 1){
-        document.getElementById("todo").innerHTML = "<span>1</span> task to do today";
+        document.getElementById("todo").innerHTML = `<span>${taskArray.length}</span> task to do today`;
     }
     else{
         document.getElementById("todoNum").innerHTML = taskArray.length;
