@@ -53,10 +53,10 @@ html, body, .container{
     cursor: pointer;
 }
 #prev{
-    margin-right: 20%;
+    margin-right: 200px;
 }
 #next{
-    margin-left: 20%;
+    margin-left: 200px;
 }
 .dayName, .dayNum{
     display: grid;
