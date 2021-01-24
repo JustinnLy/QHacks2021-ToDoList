@@ -5,35 +5,40 @@
         <link rel="stylesheet" href = "To_Do_List.css">
     </head>
     <body>
-        <div class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Calendar.html">Calendar</a></li>
-            </ul>
-        </div>
-        
-        <div class ='header'>
-            <h1 id="date">This is the header</h1>
-        </div>
-
-        <div class = 'input'>
-            <p id="inputTaskP">Task:</p>
-            <input type="text" id="task1">
-            <button  id ="task" onclick="updateTask()">Submit Task</button>
+        <div class="container">
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Calendar.html">Calendar</a></li>
+                </ul>
+            </div>
             
+            <div class ='header'>
+                <h1 id="date">This is the header</h1>
+            </div>
+
+            <div class = 'input'>
+                <p id="inputTaskP">Task:</p>
+                <input type="text" id="task1">
+                <button  id ="task" onclick="updateTask()">Add Task</button>
+                
+            </div>
+
+            <div class = 'List' id='list'>
+
+                <div class ='Todo' id = "tobedone">
+                    <h1>Tasks Left To Complete</h1>
+                </div>
+
+                <div class = 'Completed' id = "complete">
+                    <h1>Completed Tasks</h1>
+                </div>
+                
+            </div>
+            <div class="buttonDiv">
+                <button id ="update" onclick="moveTask()">Update Task</button>  
+            </div>
         </div>
-
-        <div class = 'List' id='list'>
-
-            <div class ='Todo' id = "tobedone">
-                <h1>Tasks Left To Complete</h1>
-            </div>
-
-            <div class = 'Completed' id = "complete">
-                <h1>Completed Tasks</h1>
-            </div>
-            <button id ="update" onclick="moveTask()">Update Task</button>
-        </div>  
         
         <script type="text/javascript" src="To_Do_List.js"></script>
     </body>

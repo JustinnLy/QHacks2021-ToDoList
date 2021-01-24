@@ -26,3 +26,8 @@ if(typeof(window.localStorage[taskToday]) !== "undefined" && window.localStorage
         document.getElementById("todoNum").innerHTML = taskArray.length;
     }
 }
+
+function reset(){
+    window.localStorage.clear();
+    document.getElementById("todo").innerHTML = "<span>0</span> task to do today";
+}
