@@ -1,0 +1,72 @@
+html, body, .container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    background-color: #ffffff;
+}
+.navbar{
+    background-color: #84c8f0;
+}
+.navbar ul{
+    margin: 0;
+    padding: 15px;
+    height: 100%;
+}
+.navbar ul li{
+    display: inline;
+    text-align: center;
+}
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+.title{
+    display: flex;
+    height: 40%;
+    align-items: flex-end;
+    justify-content: center;
+}
+#welcome{
+    font-size: 156px;
+    margin: 20px;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+.divDate{
+    display: flex;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+}
+#day, #month, #numDay, #year{
+    font-size: 48px;
+    margin: 5px;
+}
+.buttonDiv{
+    text-align: center;
+}
+button{
+    padding: 20px;
+    font-size: 24px;
+    font-family: "Trebuchet MS", sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #84c8f0;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: #e7e7e7;
+}
+
+@keyframes fadeIn{
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
