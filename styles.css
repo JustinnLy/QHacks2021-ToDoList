@@ -44,11 +44,19 @@ html, body, .container{
     justify-content: center;
 }
 #day, #month, #numDay, #year{
-    font-size: 48px;
+    font-size: 56px;
     margin: 5px;
+}
+.tasks{
+    text-align: center;
+    height: 10%;
+}
+#todo, #todoNum{
+    font-size: 28px;
 }
 .buttonDiv{
     text-align: center;
+    margin: 20px;
 }
 button{
     padding: 20px;
