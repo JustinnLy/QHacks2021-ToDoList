@@ -29,5 +29,5 @@ if(typeof(window.localStorage[taskToday]) !== "undefined" && window.localStorage
 
 function reset(){
     window.localStorage.clear();
-    document.getElementById("todo").innerHTML = "<span>0</span> task to do today";
+    document.getElementById("todo").innerHTML = "<span>0</span> tasks to do today";
 }
