@@ -85,6 +85,8 @@ p {
 #update{ 
     font-size: 20px;
     padding: 10px;
+    width: 150px;
+    margin: auto;
     border-radius: 10px;
     border: none;
     outline: none;
