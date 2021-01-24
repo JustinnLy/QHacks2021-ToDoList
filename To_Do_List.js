@@ -4,17 +4,35 @@ console.log(window.localStorage);
 const headerDate = document.getElementById("date");
 headerDate.innerHTML = window.localStorage.month + " " + window.localStorage.day + " " + window.localStorage.year;
 //checks if there are any tasks saved on local storage if so load it
-if(window.localStorage.taskList !== [] && window.localStorage.completeList !== []){
-    loadTask();
+var taskListKey;
+var completeListKey;
+for(var key in window.localStorage){
+    if(key.includes(window.localStorage.month) && key.includes(" " + window.localStorage.day + " ") && key.includes(window.localStorage.year)){
+        if(key.startsWith("task")){
+            taskListKey =key;
+        }
+        else if(key.startsWith("complete")){
+            completeListKey = key;
+        }
+    }
+
+}
+if(window.localStorage[`${taskListKey}`] !== "" || window.localStorage[`${completeListKey}`] !== ""){
+    console.log(window.localStorage);
+    console.log(window.localStorage[`${taskListKey}`]);
+    loadTask(window.localStorage[`${taskListKey}`],window.localStorage[`${completeListKey}`]);
+    taskListKey ="";
+    completeListKey="";
 }
 
 document.getElementById("task1").addEventListener("keypress", function (e){
     if(e.key === "Enter"){
         updateTask();
     }});
-function loadTask(){
-    var taskList = arrayify(window.localStorage.taskList);
-    var completeList = arrayify(window.localStorage.completeList);
+function loadTask(taskList, completeList){
+     console.log(taskList);
+     taskList = arrayify(taskList);
+     completeList = arrayify(completeList);
 
     const toBeDone = document.getElementById("tobedone");
     const completed = document.getElementById("complete");
@@ -118,9 +136,10 @@ function saveLocal(){
     for(var i =0 ;i < completeList.length;i++){
             completeListArr.push(completeList[i].innerHTML);
     }
-    
-    window.localStorage.setItem("taskList", taskListArr);
-    window.localStorage.setItem("completeList",completeListArr);
+    var taskListKey = "taskList" + window.localStorage.month +" "+  window.localStorage.day +" " + window.localStorage.year;
+    var completeListKey = "completeList" + window.localStorage.month +" " + window.localStorage.day + " " +window.localStorage.year;
+    window.localStorage.setItem(taskListKey, taskListArr);
+    window.localStorage.setItem(completeListKey,completeListArr);
 
 }
 
